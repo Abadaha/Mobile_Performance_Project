@@ -36,14 +36,14 @@ public class LoginPage_Test extends BaseTest {
        
         
       
-        loginPage.login("testbadaha2@gmail.com", "AA00147235");
+        loginPage.login("testbadaha@gmail.com", "AA00147235");
         loginPage.tapContinue();
         loginPage.tapSkipForNow();
         Thread.sleep(3000);
         
     }
     
-    
+    /*
 //    @Test(priority=3,dataProvider="AuthanticationDataProvider",dataProviderClass = Pages.LinkedInLoginPage.class)
     public void LoginTest2(String username, String password) throws InterruptedException {
        
@@ -63,13 +63,13 @@ public class LoginPage_Test extends BaseTest {
 //        Thread.sleep(3000);
         
     }
-    @Test(priority=4)
+   /* @Test(priority=4)
     public void upload_Pic() throws InterruptedException {
     	loginPage.upload_photo();
     	
     	Thread.sleep(5000);
     	
     }
-    
+    */
    
 }

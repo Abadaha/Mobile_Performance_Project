@@ -22,17 +22,17 @@ public class BaseTest {
 //         appPackage and appActivity
         caps.setCapability("appPackage", "com.linkedin.android"); // Linkedin package
         caps.setCapability("appActivity", "com.linkedin.android.infra.navigation.MainActivity"); // Main activity
-
-//        caps.setCapability(MobileCapabilityType.NO_RESET, true);
-//        caps.setCapability(MobileCapabilityType.FULL_RESET, false); // Keep app data
+        caps.setCapability("automationName", "UiAutomator2");
+        caps.setCapability(MobileCapabilityType.NO_RESET, true);
+        caps.setCapability(MobileCapabilityType.FULL_RESET, false); // Keep app data
 
         driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), caps);
     }
-
+/*
     @AfterClass
     public void teardown() {
         if(driver != null){
             driver.quit();
         }
-    }
+    }*/
 }

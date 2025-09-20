@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-20T15:45:00 IDT" name="Default suite" finished-at="2025-09-20T15:47:36 IDT" duration-ms="155983">
+    <groups>
+    </groups>
+    <test started-at="2025-09-20T15:45:00 IDT" name="Default test" finished-at="2025-09-20T15:47:36 IDT" duration-ms="155983">
+      <class name="Test_Classes.MessagingTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_Classes.MessagingTests@6aaceffd]" started-at="2025-09-20T15:45:00 IDT" name="setup" finished-at="2025-09-20T15:45:20 IDT" duration-ms="20377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Test_Classes.MessagingTests@6aaceffd]" started-at="2025-09-20T15:45:20 IDT" name="setUp" finished-at="2025-09-20T15:45:20 IDT" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_3_12_1_openMessagesAndViewAllConversations()[pri:1, instance:Test_Classes.MessagingTests@6aaceffd]" started-at="2025-09-20T15:45:20 IDT" name="TC_3_12_1_openMessagesAndViewAllConversations" finished-at="2025-09-20T15:45:26 IDT" duration-ms="6105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_3_12_1_openMessagesAndViewAllConversations -->
+        <test-method signature="TC_3_12_2_openJobsMessagesTab()[pri:2, instance:Test_Classes.MessagingTests@6aaceffd]" started-at="2025-09-20T15:45:26 IDT" name="TC_3_12_2_openJobsMessagesTab" finished-at="2025-09-20T15:45:31 IDT" duration-ms="4849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_3_12_2_openJobsMessagesTab -->
+        <test-method signature="TC_3_12_3_openUnreadMessagesTab()[pri:3, instance:Test_Classes.MessagingTests@6aaceffd]" started-at="2025-09-20T15:45:31 IDT" name="TC_3_12_3_openUnreadMessagesTab" finished-at="2025-09-20T15:45:34 IDT" duration-ms="2784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_3_12_3_openUnreadMessagesTab -->
+        <test-method signature="TC_3_12_4_openDraftMessagesTab()[pri:4, instance:Test_Classes.MessagingTests@6aaceffd]" started-at="2025-09-20T15:45:34 IDT" name="TC_3_12_4_openDraftMessagesTab" finished-at="2025-09-20T15:45:37 IDT" duration-ms="2756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_3_12_4_openDraftMessagesTab -->
+        <test-method signature="TC_3_12_5_openInMailMessagesTab()[pri:5, instance:Test_Classes.MessagingTests@6aaceffd]" started-at="2025-09-20T15:45:37 IDT" name="TC_3_12_5_openInMailMessagesTab" finished-at="2025-09-20T15:45:40 IDT" duration-ms="3050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_3_12_5_openInMailMessagesTab -->
+        <test-method signature="TC_3_13_1_lableConversationAsStar()[pri:6, instance:Test_Classes.MessagingTests@6aaceffd]" started-at="2025-09-20T15:45:40 IDT" name="TC_3_13_1_lableConversationAsStar" finished-at="2025-09-20T15:45:49 IDT" duration-ms="9043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_3_13_1_lableConversationAsStar -->
+        <test-method signature="TC_3_13_1_startNewConversationAndSendMessage()[pri:7, instance:Test_Classes.MessagingTests@6aaceffd]" started-at="2025-09-20T15:45:49 IDT" name="TC_3_13_1_startNewConversationAndSendMessage" finished-at="2025-09-20T15:46:13 IDT" duration-ms="24197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_3_13_1_startNewConversationAndSendMessage -->
+        <test-method signature="TC_3_13_3_searchConversationByUsername()[pri:8, instance:Test_Classes.MessagingTests@6aaceffd]" started-at="2025-09-20T15:46:13 IDT" name="TC_3_13_3_searchConversationByUsername" finished-at="2025-09-20T15:46:32 IDT" duration-ms="19109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_3_13_3_searchConversationByUsername -->
+        <test-method signature="TC_3_13_3_searchConversationText()[pri:9, instance:Test_Classes.MessagingTests@6aaceffd]" started-at="2025-09-20T15:46:32 IDT" name="TC_3_13_3_searchConversationText" finished-at="2025-09-20T15:46:50 IDT" duration-ms="17813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_3_13_3_searchConversationText -->
+        <test-method signature="TC_3_13_4_cannotMessageNonConnection()[pri:10, instance:Test_Classes.MessagingTests@6aaceffd]" started-at="2025-09-20T15:46:50 IDT" name="TC_3_13_4_cannotMessageNonConnection" finished-at="2025-09-20T15:47:03 IDT" duration-ms="12772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_3_13_4_cannotMessageNonConnection -->
+        <test-method signature="TC_3_13_1_movedConversation()[pri:11, instance:Test_Classes.MessagingTests@6aaceffd]" started-at="2025-09-20T15:47:03 IDT" name="TC_3_13_1_movedConversation" finished-at="2025-09-20T15:47:36 IDT" duration-ms="32966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_3_13_1_movedConversation -->
+      </class> <!-- Test_Classes.MessagingTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
