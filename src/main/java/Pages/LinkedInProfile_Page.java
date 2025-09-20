@@ -4,6 +4,7 @@ import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
@@ -103,7 +104,8 @@ public class LinkedInProfile_Page {
     private By Popup_messageJob_Prefrances= By.xpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.Button");
     private By date= By.xpath("//android.widget.EditText[@resource-id=\"android:id/numberpicker_input\" and @text=\"2025\"]");
     private By Set_Date= By.xpath("//android.widget.Button[@resource-id=\"android:id/button1\"]");
-    
+	private By closeBtn = By.xpath("//android.view.View[@content-desc='Close']");
+
     
     
     // Actions
@@ -284,6 +286,12 @@ public class LinkedInProfile_Page {
         wait.until(ExpectedConditions.visibilityOfElementLocated(Set_Date));
         driver.findElement(Set_Date).click();
     }
+    
+    public void tap_Experiance_form_Save_button() {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(Experiance_form_save_button));
+        driver.findElement(Experiance_form_save_button).click();
+    }
+
 
 // Methods and DataProviders
 //    	UploadPhoto method
@@ -420,23 +428,35 @@ public class LinkedInProfile_Page {
 			Thread.sleep(500);
 			selectFromDropdown();
 			
-			
 
 			Thread.sleep(500);
 			scrollToElementAndClick(By.id("com.linkedin.android:id/form_edit_start_date_field_dash"), 5);
-
 			Thread.sleep(500);
-			driver.hideKeyboard();
 			Thread.sleep(500);
 			MobileElement element = driver.findElement(By.xpath("//android.widget.EditText[@resource-id=\"android:id/numberpicker_input\" and @text=\"2025\"]"));
+			
+			element.click();
+//			driver.getKeyboard();
 			element.clear();
-			element.sendKeys("2025");
+			element.sendKeys("2021");
+			
 			MobileElement Month = driver.findElement(By.xpath("//android.widget.EditText[@resource-id=\"android:id/numberpicker_input\" and @text=\"September\"]"));
 			Thread.sleep(500);
+			Month.click();
 			Month.clear();
 			Month.sendKeys("May");
+			Thread.sleep(1000);
+			TouchAction action = new TouchAction(driver);
+
+			action.tap(PointOption.point(990, 2160)).perform();
+			
+			Thread.sleep(2000);
 			tap_Experiance_form_Set_Date_button();
-			driver.findElement(Experiance_form_save_button).click();
+
+
+			Thread.sleep(2000);
+
+			tap_Experiance_form_Save_button();
 			Thread.sleep(2000);
  			pressBack();
 
@@ -447,11 +467,25 @@ public class LinkedInProfile_Page {
         public void Delete_Experiance() throws InterruptedException {
         	tap_Experiance_ProfilePage_Edit_button();
         	tap_Experiance_ProfilePage_Select_experiance_button();
-			scrollToElementAndClick(By.xpath("//android.widget.Button[@resource-id=\"com.linkedin.android:id/profile_edit_form_page_delete_button_inline\"]"), 5);
-//			scrollToText("Delete experience");
-			scrollToElementAndClick(By.xpath("//android.widget.Button[@resource-id=\"com.linkedin.android:id/profile_edit_form_page_delete_button_inline\"]"), 5);
+			scrollToElementAndClick(By.xpath("//android.widget.Button[@resource-id=\"com.linkedin.android:id/profile_edit_form_page_delete_button_inline\"]"), 10);
+//			scrollToElementAndClick(By.xpath("//android.widget.Button[@resource-id=\"com.linkedin.android:id/profile_edit_form_page_delete_button_inline\"]"), 5);
 
 			tap_Experiance_ProfilePage_Delete_experiance_Confirmation_button();
+			
+			
+
+			
+			    MobileElement close =(MobileElement) wait
+			        .until(ExpectedConditions.visibilityOfElementLocated(closeBtn));
+			    close.click();
+			
+			
+
+			
+//			driver.findElement(By.xpath("//android.widget.Button")).click();
+//			TouchAction action = new TouchAction(driver);
+//			action.tap(PointOption.point(987, 2130)).perform();
+			
 			Thread.sleep(5000);
 			pressBack();
 			pressBack();
@@ -462,11 +496,17 @@ public class LinkedInProfile_Page {
         
         
         public void LogOut() throws InterruptedException {
-        	Thread.sleep(2000);
+			
+        	Thread.sleep(3000);
         	tapUserIconSideMenu();
-        	driver.findElement(By.id("com.linkedin.android:id/home_nav_premium_upsell_text_view")).click();
+        	pressBack();
+        	tapUserIconSideMenu();
+        	Thread.sleep(500);
+        	MobileElement Settings_Button = driver.findElement(By.xpath("//android.widget.Button[@resource-id=\"com.linkedin.android:id/home_nav_premium_upsell_text_view\"]"));
+        	Settings_Button.click();
 			scrollToElementAndClick(By.xpath("//android.widget.TextView[@text=\"Sign Out\"]"), 5);
-			driver.findElement(By.id("android:id/button1")).click();
+			
+//			driver.findElement(By.id("android:id/button1")).click();
 			
         }
         

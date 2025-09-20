@@ -41,7 +41,7 @@ public class LoginPage_Test extends BaseTest {
       
         loginPage.login("testbadaha2@gmail.com", "AA00147235");
         loginPage.tapContinue();
-        loginPage.tapSkipForNow();
+        
         Thread.sleep(3000);
         
     }
@@ -51,10 +51,13 @@ public class LoginPage_Test extends BaseTest {
     public void LoginTest2(String username, String password) throws InterruptedException {
        
         
-      
+//    	driver.hideKeyboard();
         loginPage.login(username, password);
+        
         loginPage.tapContinue();
         String errorMessage = loginPage.handleLoginFailure();
+        loginPage.handleLoginFailure();
+        loginPage.tapSkipForNow();
         System.out.println(errorMessage);
 
 //        if (errorMessage != null) {

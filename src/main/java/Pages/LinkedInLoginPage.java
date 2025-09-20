@@ -100,8 +100,8 @@ public class LinkedInLoginPage {
 
     // Login flow
     public void login(String email, String password) {
-
-    	 
+    	
+    	driver.hideKeyboard();	
           enterEmail(email);
           enterPassword(password);
           
@@ -115,7 +115,7 @@ public class LinkedInLoginPage {
         		{"awdwadwda@gmail.com","wdhsahasdh@@asdjas"},
         		{"","wdwwdw@dwsadjasdj"},
         		{"testbadaha@gmail.com",""},
-        		{"testbadaha@gmail.com","AA00147235"},
+        		{"ahmad.badaha2017@gmail.com","AA00147235"},
         		
         		};
 
