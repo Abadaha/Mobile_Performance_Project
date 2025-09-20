@@ -1,6 +1,7 @@
 package Test_Classes;
 
 import Pages.LinkedInLoginPage;
+import Pages.LinkedInProfile_Page;
 import Project.BaseTest;
 
 import org.testng.Assert;
@@ -11,14 +12,16 @@ public class LoginPage_Test extends BaseTest {
 	
 	 // Initialize page object AFTER driver is ready (from BaseTest)
 	LinkedInLoginPage loginPage;
-	
+	LinkedInProfile_Page Profile;
 	@BeforeClass
 	 public void setUp() {
-		loginPage = new LinkedInLoginPage(driver);
+			loginPage = new LinkedInLoginPage(driver);
+			Profile = new LinkedInProfile_Page(driver);
+			
     }
 
 
-    @Test(priority=1)
+//    @Test(priority=1)
     public void Navigate_to_LoginPage() throws InterruptedException {
        
         
@@ -31,7 +34,7 @@ public class LoginPage_Test extends BaseTest {
     
     
     
-    @Test(priority=2)
+//    @Test(priority=2)
     public void LoginTest1() throws InterruptedException {
        
         
@@ -65,11 +68,74 @@ public class LoginPage_Test extends BaseTest {
     }
     @Test(priority=4)
     public void upload_Pic() throws InterruptedException {
-    	loginPage.upload_photo();
-    	
-    	Thread.sleep(5000);
+    	Profile.upload_photo();
+
+    	Thread.sleep(2000);
+
     	
     }
+    @Test(priority=5)
+    public void update_Pic() throws InterruptedException {
+    	Profile.update_Photo();
+    	
+    	Thread.sleep(2000); 
+    	
+    }
+    @Test(priority=6)
+    public void add_Pic_frame() throws InterruptedException {
+    	Profile.add_frame();
+    	
+    	Thread.sleep(3000); 
+    	
+    }
+    @Test(priority=7)
+    public void remove_Pic_frame() throws InterruptedException {
+    	Profile.remove_frame();
+    	
+    	Thread.sleep(500); 
+    	
+    }
+    
+    @Test(priority=8)
+    public void Change_Pic_Privacy() throws InterruptedException {
+    	Profile.Change_Photo_Privacy();
+    	
+    	Thread.sleep(600); 
+    	
+    }
+    
+    @Test(priority=9)
+    public void delete_Profile_Pictrue() throws InterruptedException {
+    	Profile.Delete_Photo();
+    	
+    	Thread.sleep(500); 
+    	
+    }
+    @Test(priority=10)
+    public void Add_Experiance() throws InterruptedException {
+    	Profile.Add_Experiance();
+    	
+    	
+    	
+    }
+    @Test(priority=11)
+    public void Delete_Experiance() throws InterruptedException {
+    	Profile.Delete_Experiance();
+    	
+    	
+    	
+    }
+    
+    @Test(priority=12)
+    public void LogOut() throws InterruptedException {
+    	Profile.LogOut();
+    	
+    	Thread.sleep(2000); 
+    	
+    }
+    
+    
+    
     
    
 }

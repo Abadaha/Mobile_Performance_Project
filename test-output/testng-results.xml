@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-20T15:18:19 EEST" name="Default suite" finished-at="2025-09-20T15:20:48 EEST" duration-ms="149094">
+    <groups>
+    </groups>
+    <test started-at="2025-09-20T15:18:19 EEST" name="Default test" finished-at="2025-09-20T15:20:48 EEST" duration-ms="149094">
+      <class name="Test_Classes.LoginPage_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_Classes.LoginPage_Test@49139829]" started-at="2025-09-20T15:18:19 EEST" name="setup" finished-at="2025-09-20T15:18:29 EEST" duration-ms="9929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Test_Classes.LoginPage_Test@49139829]" started-at="2025-09-20T15:18:29 EEST" name="setUp" finished-at="2025-09-20T15:18:29 EEST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="upload_Pic()[pri:4, instance:Test_Classes.LoginPage_Test@49139829]" started-at="2025-09-20T15:18:29 EEST" name="upload_Pic" finished-at="2025-09-20T15:18:44 EEST" duration-ms="14879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- upload_Pic -->
+        <test-method signature="update_Pic()[pri:5, instance:Test_Classes.LoginPage_Test@49139829]" started-at="2025-09-20T15:18:44 EEST" name="update_Pic" finished-at="2025-09-20T15:19:07 EEST" duration-ms="23049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update_Pic -->
+        <test-method signature="add_Pic_frame()[pri:6, instance:Test_Classes.LoginPage_Test@49139829]" started-at="2025-09-20T15:19:07 EEST" name="add_Pic_frame" finished-at="2025-09-20T15:19:19 EEST" duration-ms="11503" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_Pic_frame -->
+        <test-method signature="remove_Pic_frame()[pri:7, instance:Test_Classes.LoginPage_Test@49139829]" started-at="2025-09-20T15:19:19 EEST" name="remove_Pic_frame" finished-at="2025-09-20T15:19:27 EEST" duration-ms="8300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- remove_Pic_frame -->
+        <test-method signature="Change_Pic_Privacy()[pri:8, instance:Test_Classes.LoginPage_Test@49139829]" started-at="2025-09-20T15:19:27 EEST" name="Change_Pic_Privacy" finished-at="2025-09-20T15:19:33 EEST" duration-ms="6224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Change_Pic_Privacy -->
+        <test-method signature="delete_Profile_Pictrue()[pri:9, instance:Test_Classes.LoginPage_Test@49139829]" started-at="2025-09-20T15:19:33 EEST" name="delete_Profile_Pictrue" finished-at="2025-09-20T15:19:40 EEST" duration-ms="7242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete_Profile_Pictrue -->
+        <test-method signature="Add_Experiance()[pri:10, instance:Test_Classes.LoginPage_Test@49139829]" started-at="2025-09-20T15:19:40 EEST" name="Add_Experiance" finished-at="2025-09-20T15:20:19 EEST" duration-ms="38079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Add_Experiance -->
+        <test-method signature="Delete_Experiance()[pri:11, instance:Test_Classes.LoginPage_Test@49139829]" started-at="2025-09-20T15:20:19 EEST" name="Delete_Experiance" finished-at="2025-09-20T15:20:38 EEST" duration-ms="19036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Delete_Experiance -->
+        <test-method signature="LogOut()[pri:12, instance:Test_Classes.LoginPage_Test@49139829]" started-at="2025-09-20T15:20:38 EEST" name="LogOut" finished-at="2025-09-20T15:20:48 EEST" duration-ms="10410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOut -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Classes.LoginPage_Test@49139829]" started-at="2025-09-20T15:20:48 EEST" name="teardown" finished-at="2025-09-20T15:20:48 EEST" duration-ms="360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Test_Classes.LoginPage_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

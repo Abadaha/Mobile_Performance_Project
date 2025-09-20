@@ -17,7 +17,7 @@ public class LinkedInLoginPage {
     private AndroidDriver<MobileElement> driver;
     private WebDriverWait wait;
     
-    public LinkedInLoginPage() { 
+    public LinkedInLoginPage() {  
     }
     public LinkedInLoginPage(AndroidDriver<MobileElement> driver) {
         this.driver = driver;
@@ -45,7 +45,7 @@ public class LinkedInLoginPage {
         wait.until(ExpectedConditions.visibilityOfElementLocated(signInWithEmailButton));
         driver.findElement(signInWithEmailButton).click();
     }
-
+    
     public void enterEmail(String email) {
         wait.until(ExpectedConditions.visibilityOfElementLocated(emailField));
         driver.findElement(emailField).clear();
@@ -151,8 +151,8 @@ public class LinkedInLoginPage {
         public void upload_photo() {
         	tapUserIconSideMenu();
         	tapUserPlusIcon();
-        	tap_uploadFrom_Phone();
-        	tap_Select_photo();
+        	tap_uploadFrom_Phone(); 
+        	tap_Select_photo(); 
         	tap_Save_photo();
         	
         }

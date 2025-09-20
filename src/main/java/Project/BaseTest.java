@@ -18,13 +18,13 @@ public class BaseTest {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Emulator");
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-
+        caps.setCapability("automationName", "UiAutomator2"); 
 //         appPackage and appActivity
         caps.setCapability("appPackage", "com.linkedin.android"); // Linkedin package
         caps.setCapability("appActivity", "com.linkedin.android.infra.navigation.MainActivity"); // Main activity
-
-//        caps.setCapability(MobileCapabilityType.NO_RESET, true);
-//        caps.setCapability(MobileCapabilityType.FULL_RESET, false); // Keep app data
+        caps.setCapability("automationName", "UiAutomator2");
+        caps.setCapability(MobileCapabilityType.NO_RESET, true);
+        caps.setCapability(MobileCapabilityType.FULL_RESET, false); // Keep app data
 
         driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), caps);
     }
