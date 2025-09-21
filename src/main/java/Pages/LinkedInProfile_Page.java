@@ -301,13 +301,13 @@ public class LinkedInProfile_Page {
         	tap_uploadFrom_Phone();
         	tap_Select_photo();
         	tap_Save_photo();
-        	Thread.sleep(5000);
+        	Thread.sleep(6000);
         	
         
         }
         
     	public boolean Upload_Photo_Assert() {
-    		WebElement Plus_icon=driver.findElement(Profile_Plus_Icon);
+    		WebElement Plus_icon=driver.findElement(User_Icon_Side_menu);
     		
     		
     		return Plus_icon.isDisplayed();
@@ -331,10 +331,21 @@ public class LinkedInProfile_Page {
 // 			
  	
 			Thread.sleep(6000);
-			pressBack();
+			
         }
         
+        
+    	public boolean Update_Photo_Assert() {
+    		WebElement image=driver.findElement(By.id("com.linkedin.android:id/profile_image_viewer_image"));
+    		
+    		
+    		return image.isDisplayed();
+    		
+    	}
+        
+        
         public void add_frame() throws InterruptedException {
+        	pressBack();
 			tap_Profile_Photo_Profile();
 			tap_View_Or_Edit_Profile_photo_Button();
 			tap_Profile_Photo_frame_button();
@@ -353,13 +364,21 @@ public class LinkedInProfile_Page {
 				);
 				element.click();
 				
-				pressBack();
-			pressBack();
+				Thread.sleep(2000);
 
 
         }
+       	public boolean Add_frame_Assert() {
+    		WebElement image=driver.findElement(By.id("com.linkedin.android:id/profile_image_viewer_image"));
+    		
+    		
+    		return image.isDisplayed();
+    		
+    	}
         
         public void remove_frame() throws InterruptedException {
+        	pressBack();
+//			pressBack();
  			tap_Profile_Photo_Profile();
  			tap_View_Or_Edit_Profile_photo_Button();
  			tap_Profile_Photo_frame_button();
@@ -367,12 +386,21 @@ public class LinkedInProfile_Page {
  			tap_Profile_Photo_frame_apply();
  			tap_Profile_Photo_frame_ٍRemove_Open_To_Work();
  			Thread.sleep(2000);
- 			pressBack();
+ 			
  			
 
          }
         
+       	public boolean remove_frame_Assert() {
+    		WebElement image=driver.findElement(By.id("com.linkedin.android:id/profile_image_viewer_image"));
+    		
+    		
+    		return image.isDisplayed();
+    		
+    	}
+        
         public void Change_Photo_Privacy() throws InterruptedException {
+        	pressBack();
  			tap_Profile_Photo_Profile();
  			tap_View_Or_Edit_Profile_photo_Button();
  			Thread.sleep(500);
@@ -380,13 +408,22 @@ public class LinkedInProfile_Page {
  			Thread.sleep(500);
  		    tap_Profile_Photo_privacy_MyNetwork();
  			Thread.sleep(2000);
- 			pressBack();
-
-
+ 			
+ 	
          }
         
         
+      	public boolean Change_Privacy_Assert() {
+    		WebElement Privacy=driver.findElement(Profile_Photo_privacy);
+    		
+    		
+    		return Privacy.isDisplayed();
+    		
+    	}
+        
+        
         public void Delete_Photo() throws InterruptedException {
+        	pressBack();
  			tap_Profile_Photo_Profile();
  			Thread.sleep(500);
  			tap_View_Or_Edit_Profile_photo_Button();
@@ -397,10 +434,18 @@ public class LinkedInProfile_Page {
  			Thread.sleep(500);
  		    tap_Profile_Photo_delete_button_Confirmation();
  			
- 			Thread.sleep(1000);
+ 			Thread.sleep(2000);
  			
  			
         }
+        
+    	public boolean Delete_photo_Assert() {
+    		WebElement Privacy=driver.findElement(By.id("com.linkedin.android:id/profile_top_card_verify_action"));
+    		
+    		
+    		return Privacy.isDisplayed();
+    		
+    	}
         
         
         
@@ -462,13 +507,22 @@ public class LinkedInProfile_Page {
 
 			tap_Experiance_form_Save_button();
 			Thread.sleep(2000);
- 			pressBack();
-
- 			Thread.sleep(2000);
+ 			
 
         }
         
+    	public boolean Add_Experience_Assert() {
+    		WebElement Position_Added=driver.findElement(By.id("com.linkedin.android:id/profile_next_best_action_form_title"));
+    		
+    		
+    		return Position_Added.isDisplayed();
+    		
+    	}
+        
         public void Delete_Experiance() throws InterruptedException {
+        	pressBack();
+
+ 			Thread.sleep(2000);
         	tap_Experiance_ProfilePage_Edit_button();
         	tap_Experiance_ProfilePage_Select_experiance_button();
 			scrollToElementAndClick(By.xpath("//android.widget.Button[@resource-id=\"com.linkedin.android:id/profile_edit_form_page_delete_button_inline\"]"), 10);
@@ -483,15 +537,23 @@ public class LinkedInProfile_Page {
 			    close.click();
 			
 			Thread.sleep(3000);
-			pressBack();
-			pressBack();
+		
 			
         	
         	
         }
+    	public boolean Delete_Experience_Assert() {
+    		WebElement Position_Deleted=driver.findElement(MobileBy.AndroidUIAutomator("new UiSelector().text(\"Experience\")"));
+    		
+    		
+    		return Position_Deleted.isDisplayed();
+    		
+    	}
         
         
         public void LogOut() throws InterruptedException {
+        	pressBack();
+			pressBack();
 			
         	Thread.sleep(3000);
         	tapUserIconSideMenu();
@@ -503,10 +565,17 @@ public class LinkedInProfile_Page {
 			scrollToElementAndClick(By.xpath("//android.widget.TextView[@text=\"Sign Out\"]"), 5);
 			
 			driver.findElement(By.id("android:id/button1")).click();
+			Thread.sleep(6000);
 			
         }
         
-        
+    	public boolean Log_out_Assert() {
+    		WebElement Logout=driver.findElement(By.id("com.linkedin.android:id/ad_full_logo_image"));
+    		
+    		
+    		return Logout.isDisplayed();
+    		
+    	}
         
         private void selectFromDropdown() {
             

@@ -72,7 +72,7 @@ public class LoginPage_Test extends BaseTest {
     @Test(priority=4)
     public void upload_Pic() throws InterruptedException {
     	Profile.upload_photo();
-//    	Assert.assertFalse(Profile.Upload_Photo_Assert());
+    	Assert.assertTrue(Profile.Upload_Photo_Assert());
 
     	Thread.sleep(2000);
 
@@ -82,20 +82,22 @@ public class LoginPage_Test extends BaseTest {
     public void update_Pic() throws InterruptedException {
     	Profile.update_Photo();
     	
+    	Assert.assertTrue(Profile.Update_Photo_Assert());
+
     	Thread.sleep(2000); 
     	
     }
     @Test(priority=6)
     public void add_Pic_frame() throws InterruptedException {
     	Profile.add_frame();
-    	
+    	Assert.assertTrue(Profile.Add_frame_Assert());
     	Thread.sleep(3000); 
     	
     }
     @Test(priority=7)
     public void remove_Pic_frame() throws InterruptedException {
     	Profile.remove_frame();
-    	
+    	Assert.assertTrue(Profile.remove_frame_Assert());
     	Thread.sleep(500); 
     	
     }
@@ -103,6 +105,7 @@ public class LoginPage_Test extends BaseTest {
     @Test(priority=8)
     public void Change_Pic_Privacy() throws InterruptedException {
     	Profile.Change_Photo_Privacy();
+    	Assert.assertTrue(Profile.Change_Privacy_Assert());
     	
     	Thread.sleep(600); 
     	
@@ -111,6 +114,8 @@ public class LoginPage_Test extends BaseTest {
     @Test(priority=9)
     public void delete_Profile_Pictrue() throws InterruptedException {
     	Profile.Delete_Photo();
+    	Assert.assertTrue(Profile.Delete_photo_Assert());
+
     	
     	Thread.sleep(500); 
     	
@@ -118,14 +123,14 @@ public class LoginPage_Test extends BaseTest {
     @Test(priority=10)
     public void Add_Experiance() throws InterruptedException {
     	Profile.Add_Experiance();
-    	
+    	Assert.assertTrue(Profile.Add_Experience_Assert());
     	
     	
     }
     @Test(priority=11)
     public void Delete_Experiance() throws InterruptedException {
     	Profile.Delete_Experiance();
-    	
+    	Assert.assertTrue(Profile.Delete_Experience_Assert());
     	
     	
     }
@@ -133,7 +138,8 @@ public class LoginPage_Test extends BaseTest {
     @Test(priority=12)
     public void LogOut() throws InterruptedException {
     	Profile.LogOut();
-    	
+    	Assert.assertTrue(Profile.Log_out_Assert());
+
     	Thread.sleep(2000); 
     	
     }

@@ -5,18 +5,10 @@
     <classes>
       <class name="Test_Classes.LoginPage_Test">
         <methods>
-          <include name="remove_Pic_frame"/>
-          <include name="update_Pic"/>
-          <include name="Add_Experiance"/>
           <include name="LogOut"/>
-          <include name="delete_Profile_Pictrue"/>
-          <include name="Delete_Experiance"/>
-          <include name="upload_Pic"/>
           <include name="teardown"/>
           <include name="setUp"/>
-          <include name="Change_Pic_Privacy"/>
           <include name="setup"/>
-          <include name="add_Pic_frame"/>
         </methods>
       </class> <!-- Test_Classes.LoginPage_Test -->
     </classes>
