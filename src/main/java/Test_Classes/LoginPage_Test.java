@@ -72,6 +72,7 @@ public class LoginPage_Test extends BaseTest {
     @Test(priority=4)
     public void upload_Pic() throws InterruptedException {
     	Profile.upload_photo();
+//    	Assert.assertFalse(Profile.Upload_Photo_Assert());
 
     	Thread.sleep(2000);
 

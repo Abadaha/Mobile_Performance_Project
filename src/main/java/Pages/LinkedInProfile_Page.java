@@ -302,14 +302,18 @@ public class LinkedInProfile_Page {
         	tap_Select_photo();
         	tap_Save_photo();
         	Thread.sleep(5000);
-
+        	
         
         }
         
-
-        public boolean isPlusIconDisplayed() {
-            return !driver.findElements(Profile_Plus_Icon).isEmpty();
-        }
+    	public boolean Upload_Photo_Assert() {
+    		WebElement Plus_icon=driver.findElement(Profile_Plus_Icon);
+    		
+    		
+    		return Plus_icon.isDisplayed();
+    		
+    	}
+      
         
         public void update_Photo() throws InterruptedException {
 			tapUserIconSideMenu();
@@ -468,7 +472,6 @@ public class LinkedInProfile_Page {
         	tap_Experiance_ProfilePage_Edit_button();
         	tap_Experiance_ProfilePage_Select_experiance_button();
 			scrollToElementAndClick(By.xpath("//android.widget.Button[@resource-id=\"com.linkedin.android:id/profile_edit_form_page_delete_button_inline\"]"), 10);
-//			scrollToElementAndClick(By.xpath("//android.widget.Button[@resource-id=\"com.linkedin.android:id/profile_edit_form_page_delete_button_inline\"]"), 5);
 
 			tap_Experiance_ProfilePage_Delete_experiance_Confirmation_button();
 			
@@ -479,14 +482,7 @@ public class LinkedInProfile_Page {
 			        .until(ExpectedConditions.visibilityOfElementLocated(closeBtn));
 			    close.click();
 			
-			
-
-			
-//			driver.findElement(By.xpath("//android.widget.Button")).click();
-//			TouchAction action = new TouchAction(driver);
-//			action.tap(PointOption.point(987, 2130)).perform();
-			
-			Thread.sleep(5000);
+			Thread.sleep(3000);
 			pressBack();
 			pressBack();
 			
@@ -506,7 +502,7 @@ public class LinkedInProfile_Page {
         	Settings_Button.click();
 			scrollToElementAndClick(By.xpath("//android.widget.TextView[@text=\"Sign Out\"]"), 5);
 			
-//			driver.findElement(By.id("android:id/button1")).click();
+			driver.findElement(By.id("android:id/button1")).click();
 			
         }
         
