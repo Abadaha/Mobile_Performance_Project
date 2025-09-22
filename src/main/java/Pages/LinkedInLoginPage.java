@@ -24,7 +24,7 @@ public class LinkedInLoginPage {
         this.wait = new WebDriverWait(driver, 10); // 10-second timeout
     }
 
-   
+    // Locators
     private By signInWithEmailButton = By.id("com.linkedin.android:id/growth_prereg_fragment_login_button");
     private By emailField = By.className("android.widget.AutoCompleteTextView");
     private By passwordField = By.className("android.widget.EditText");
