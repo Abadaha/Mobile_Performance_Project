@@ -26,7 +26,7 @@ public class SendConnection extends BaseTest {
  	  MobileElement follow= (MobileElement) driver.findElement(MobileBy.AccessibilityId("Connect"));
       follow.click();
       Thread.sleep(5000);
-       
+    //   System.out.println("Haya"); 
 
   }
 }
