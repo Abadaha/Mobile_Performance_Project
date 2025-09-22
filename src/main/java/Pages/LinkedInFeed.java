@@ -22,7 +22,7 @@ public class LinkedInFeed {
 		this.touchAction = new AndroidTouchAction(driver);
 	}
 
-	
+	 // Locators
 	private By likeButton = By.id("com.linkedin.android:id/feed_social_actions_like_button");
 	private By likeCount = By.id("com.linkedin.android:id/feed_conversations_reactions_count");
 	private By commentIcon = By.id("com.linkedin.android:id/feed_social_actions_comment_button");
@@ -296,4 +296,5 @@ public class LinkedInFeed {
 	}
 
 }
+
 
