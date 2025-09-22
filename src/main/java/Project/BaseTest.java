@@ -28,11 +28,11 @@ public class BaseTest {
 
         driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), caps);
     }
-
+/*
     @AfterClass
     public void teardown() {
         if(driver != null){
             driver.quit();
         }
-    }
+    }*/
 }
