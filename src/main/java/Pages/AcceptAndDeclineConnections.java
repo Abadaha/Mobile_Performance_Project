@@ -19,5 +19,6 @@ public class AcceptAndDeclineConnections extends BaseTest {
 	  Thread.sleep(4000);
 	  MobileElement decline= (MobileElement) driver.findElement(MobileBy.AndroidUIAutomator("new UiSelector().className(\"android.view.View\").instance(40)"));
 	  decline.click();
+	  //System.out.println("haya");
   }
 }

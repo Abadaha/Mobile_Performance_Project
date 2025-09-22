@@ -28,7 +28,7 @@ public class SearchClass extends BaseTest {
 	  Thread.sleep(4000);
 	  MobileElement result= (MobileElement) driver.findElement(MobileBy.AccessibilityId("Search suggestion, haya abu hjeer, 1st degree connection QA Specialist | Scrum Master | Driving Agile Quality & Team Collaboration, Press enter for search results."));
        result.click();
-
+       //System.out.println("haya");
   }
 
 
