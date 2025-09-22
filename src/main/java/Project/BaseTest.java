@@ -18,6 +18,7 @@ public class BaseTest {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Emulator");
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+
         caps.setCapability("automationName", "UiAutomator2"); 
 //         appPackage and appActivity
         caps.setCapability("appPackage", "com.linkedin.android"); // Linkedin package
