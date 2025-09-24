@@ -34,5 +34,13 @@ This repo contains a **test plan** and resources for:
 
 ---
 
+## 🎥 Video Demo
+You can watch recordings of the test runs in the project here:  
+[Documentation/Mobile/Screen Record](https://github.com/Abadaha/Mobile_Performance_Project/tree/master/Documentation%2FMobile%2FScreen%20Record)  
+
+*(Click the link, then select the video file to view the screen recording of the automation & API performance run.)*
+
+---
+
 ## Contributors
-Ahmed, Aya Sh, Aya Ali, Haya  
+Ahmed, Aya Sh, Aya Ali, Haya
