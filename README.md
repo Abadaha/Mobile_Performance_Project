@@ -40,9 +40,8 @@ This repo contains a **test plan** and resources for:
 ---
 
 ## 🎥 Video Demo
-[![Watch the Demo](https://img.icons8.com/clouds/452/video.png)](https://drive.google.com/drive/folders/1jEvi77231KoOIHoB89KThQx0jLc8Vuec)
-
-👉 Click the thumbnail to open the **Google Drive folder** and watch the screen recordings of the test execution.
+You can watch the screen recordings of the test execution here:  
+👉 [Google Drive – Screen Recordings](https://drive.google.com/drive/folders/1jEvi77231KoOIHoB89KThQx0jLc8Vuec)
 
 ---
 
