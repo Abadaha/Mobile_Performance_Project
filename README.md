@@ -24,6 +24,9 @@ This repo contains a **test plan** and resources for:
 - Appium (mobile automation)  
 - JMeter (API performance)  
 - Android Emulator / Real Devices  
+- Eclipse & TestNG (automation scripting)  
+- GitHub & Trello (collaboration and project management)  
+- Google Drive (documentation and reports)  
 
 ---
 
@@ -31,16 +34,20 @@ This repo contains a **test plan** and resources for:
 - Test plan (docx/pdf)  
 - JMeter scripts (`.jmx`)  
 - Appium test scripts  
+- Test execution reports and defect tracking  
+- Requirements Traceability Matrix (RTM)  
 
 ---
 
 ## 🎥 Video Demo
-You can watch recordings of the test runs in the project here:  
-[Documentation/Mobile/Screen Record](https://github.com/Abadaha/Mobile_Performance_Project/tree/master/Documentation%2FMobile%2FScreen%20Record)  
+[![Watch the Demo](https://img.icons8.com/clouds/452/video.png)](https://drive.google.com/drive/folders/1jEvi77231KoOIHoB89KThQx0jLc8Vuec)
 
-*(Click the link, then select the video file to view the screen recording of the automation & API performance run.)*
+👉 Click the thumbnail to open the **Google Drive folder** and watch the screen recordings of the test execution.
 
 ---
 
 ## Contributors
-Ahmed, Aya Sh, Aya Ali, Haya
+- Ahmed  
+- Aya Sh  
+- Aya Ali  
+- Haya
