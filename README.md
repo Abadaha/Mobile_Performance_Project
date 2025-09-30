@@ -41,7 +41,7 @@ This repo contains a **test plan** and resources for:
 
 ## 🎥 Video Demo
 You can watch the screen recordings of the test execution here:  
-👉 [Google Drive – Screen Recordings](https://drive.google.com/drive/folders/1jEvi77231KoOIHoB89KThQx0jLc8Vuec)
+👉 [Google Drive – Screen Recordings](https://drive.google.com/file/d/16SIqpacb6Wf2AR7-cDfwrAnraminIlPy/view?usp=drivesdk)
 
 ---
 
